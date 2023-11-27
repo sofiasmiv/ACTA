@@ -6,7 +6,7 @@ html {
 body {
     background-color: #d9d9d9;
     color: #404040;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -18,7 +18,9 @@ header {
 
 .logo {
     flex: 1;
-    align-self: center;
+    align-self: left;
+    padding-left: 5px;
+    margin-left: 100px;
 }
 
 p {
@@ -40,24 +42,25 @@ a:visited {
 .mindex {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 16px;
-    border-width: 2px;
+    /* border-width: 2px;
     border-style: solid;
     border-color: #404040;
-    border-radius: 20px;
+    border-radius: 20px; */
     text-align: center;
 }
 
 .msignup {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 16px;
     border-radius: 20px;
     border: 2px solid #404040;
+    background-color: #b8b8b8;
 }
 
 section {
@@ -97,14 +100,14 @@ figure {
 
 .logo {
     flex: 1;
-    align-self: center;
+    align-self: left;
 }
 
 .logo_image {
     display: flex;
     height: 130px;
     width: 130px;
-    align-self: center;
+    align-self: left;
     flex: 1;
     margin-left: 35%;
 }
@@ -156,7 +159,6 @@ h1 {
     display: flex;
     flex-grow: 1;
     height: 100%;
-    border-radius: 5px;
     border-style: solid;
 }
 .active > a{
@@ -166,7 +168,7 @@ h1 {
     width: 100%;
 }
 .active {
-    background-color: #92352e;
+    background-color: #4d7022;
 }
 .pnav {
     background-color: #404040;
@@ -207,12 +209,13 @@ footer {
     width: 80%;
 }
 
-.pnav>a:hover {
+/* .pnav>a:hover {
     color: #4d7022;
-}
+} */
 
 .pnav:hover {
-    background-color: #92352e;
+    background-color: #505050;
+    border-radius: 5px;
 }
 
 #sign_up {
@@ -227,6 +230,10 @@ footer {
     padding: 5px;
 }
 
+#sign_up:hover {
+    background-color: #b54848;
+}
+
 #form {
     display: flex;
 }
@@ -239,6 +246,7 @@ fieldset {
     margin-left: 2%;
     margin-right: 2%;
     width: 100%;
+    border: none 0px;
 }
 
 label {
@@ -293,17 +301,17 @@ legend {
     background-color: white;
 }
 
-#topics {
+/* #topics {
     display: block;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 5px;
     margin-right: 5px;
-}
+} */
 
-input:hover {
-    background-color: #dbedc4;
+.textinput:hover {
+    border: 1px solid #5b5b5b;
 }
 
 #submit{
@@ -317,4 +325,65 @@ input:hover {
     border-radius: 3px;
     padding: 5px;
     align-self: center;
+}
+
+#submit:hover {
+    background-color: #b54848;
+}
+
+.checkboxlabel{
+    display: block;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkboxlabel input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #999999;
+    border-radius: 3px;
+}
+
+.checkboxlabel:hover input ~ .checkmark {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px;
+}
+
+.checkboxlabel input:checked ~ .checkmark {
+    background-color: #6da727;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkboxlabel input:checked ~ .checkmark:after {
+    display:block;
+}
+
+.container .checkmark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+
 }

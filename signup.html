@@ -37,7 +37,7 @@
             <li class="pnav"><a href="cleanwaterandsanitation.html">Clean Water and Sanitation</a></li>
             <li class="pnav"><a href="genderequality.html">Gender Equality</a></li>
             <li class="pnav"><a href="teaminformation.html">Team Information</a></li>
-            <li class="pnav"><a href="signup.html">Sign up</a></li>
+            <li class="active"><a href="signup.html">Sign up</a></li>
         </ul>
     </nav>
 
@@ -47,25 +47,40 @@
         
         <p class="form"><small>Required information is marked with an asterik (*)</small></p>
         <form action="" method="post" id="form">
-            <fieldset
+            <fieldset>
                 <legend>Contact Form </legend>
 
                 <label for="firstname">First Name: * </label>
-                <input type="text" id="fname" name="firstname" required aria-required>
+                <input type="text" class="textinput" id="fname" name="firstname" required aria-required>
 
                 <label for="lastname">Last Name: </label>
-                <input type="text" id="lname" name="lastname">
+                <input type="text" class="textinput" id="lname" name="lastname">
 
                 <label for="email">Email: *</label>
-                <input type="email" id="email" name="email" required aria-required>
+                <input type="email" class="textinput" id="email" name="email" required aria-required>
 
-                <label for="topics">Which of the following topics would you like to recieve newsletters about: *
+
+                <label for="topics">Which of the following topics would you like to recieve newsletters about: *</label>
+                <label class="checkboxlabel">General Information
+                    <input type="checkbox" id="topics" name="topics" checked="checked">
+                    <span class="checkmark"></span>
                 </label>
-                <input type="checkbox" id="topics" name="topics">General Information</input>
-                <input type="checkbox" id="topics" name="topics">Climate Change</input>
-                <input type="checkbox" id="topics" name="topics">Clean Water and Sanitation</input>
-                <input type="checkbox" id="topics" name="topics">Gender Equality</input>
-                <input type="checkbox" id="topics" name="topics">All of the above</input>
+                <label class="checkboxlabel">Climate Change
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">Clean Water and Sanitation
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">Gender Equality
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">All of the above
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
 
                 <button id="submit">Submit</button>
             </fieldset>
