@@ -18,6 +18,14 @@
                     <img src="images/Project Logo.jpg" alt="ACTA">
                     <h1 class="logo">A Call to Action</h1>
                 </div>
+                <nav>
+                    <!-- Nav inside header, this is for social media links -->
+                    <ul class="snav">
+                        <li><a href="index.html"><img src="images/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="climatechange.html"><img src="images/x.png" alt="X"></a></li>
+                        <li><a href="schedule.html"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
     </div>
@@ -39,25 +47,40 @@
         
         <p class="form"><small>Required information is marked with an asterik (*)</small></p>
         <form action="" method="post" id="form">
-            <fieldset
+            <fieldset>
                 <legend>Contact Form </legend>
 
                 <label for="firstname">First Name: * </label>
-                <input type="text" id="fname" name="firstname" required aria-required>
+                <input type="text" class="textinput" id="fname" name="firstname" required aria-required>
 
                 <label for="lastname">Last Name: </label>
-                <input type="text" id="lname" name="lastname">
+                <input type="text" class="textinput" id="lname" name="lastname">
 
                 <label for="email">Email: *</label>
-                <input type="email" id="email" name="email" required aria-required>
+                <input type="email" class="textinput" id="email" name="email" required aria-required>
 
-                <label for="topics">Which of the following topics would you like to recieve newsletters about: *
+
+                <label for="topics">Which of the following topics would you like to recieve newsletters about: *</label>
+                <label class="checkboxlabel">General Information
+                    <input type="checkbox" id="topics" name="topics" checked="checked">
+                    <span class="checkmark"></span>
                 </label>
-                <input type="checkbox" id="topics" name="topics">General Information</input>
-                <input type="checkbox" id="topics" name="topics">Climate Change</input>
-                <input type="checkbox" id="topics" name="topics">Clean Water and Sanitation</input>
-                <input type="checkbox" id="topics" name="topics">Gender Equality</input>
-                <input type="checkbox" id="topics" name="topics">All of the above</input>
+                <label class="checkboxlabel">Climate Change
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">Clean Water and Sanitation
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">Gender Equality
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxlabel">All of the above
+                    <input type="checkbox" id="topics" name="topics">
+                    <span class="checkmark"></span>
+                </label>
 
                 <button id="submit">Submit</button>
             </fieldset>
@@ -70,14 +93,14 @@
                 Copyright &copy; 2023 A Call to Action <a href="mailto:teamsupport@gmail.com"> Team Support </a>
             </p>
         </small>
-        <nav>
-            <!-- Nav inside footer, this is for social media links -->
-            <ul class="snav">
-                <li><a href="index.html"><img src="images/facebook.png" alt="Facebook"></a></li>
-                <li><a href="climatechange.html"><img src="images/x.png" alt="X"></a></li>
-                <li><a href="schedule.html"><img src="images/instagram.png" alt="Instagram"></a></li>
-            </ul>    
-        </nav>
+            <nav>
+                <!-- Nav inside footer, this is for social media links -->
+                <ul class="snav">
+                    <li><a href="index.html"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="climatechange.html"><img src="images/x.png" alt="X"></a></li>
+                    <li><a href="schedule.html"><img src="images/instagram.png" alt="Instagram"></a></li>
+                </ul>    
+            </nav>
     </footer>
 
 
