@@ -115,6 +115,7 @@ figure {
 .snav {
     display: flex;
     list-style-type: none;
+    justify-content: center;
 }
 
 .snav>li {
@@ -161,17 +162,11 @@ h1 {
     height: 100%;
     border-style: solid;
 }
-.active > a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.pnav {
+    background-color: #404040;
 }
 .active {
     background-color: #4d7022;
-}
-.pnav {
-    background-color: #404040;
 }
 .pnav > a{
     display: flex;
@@ -208,10 +203,6 @@ footer {
     align-self: center;
     width: 80%;
 }
-
-/* .pnav>a:hover {
-    color: #4d7022;
-} */
 
 .pnav:hover {
     background-color: #505050;
