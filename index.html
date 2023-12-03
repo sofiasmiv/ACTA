@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="acta.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/d6c5b3a982.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <div class="flex_logo_nav">
-                <!-- Logo and Heading -->
-                <div class="logo_image">
-                    <img src="images/Project Logo.jpg" alt="ACTA">
-                    <h1 class="logo">A Call to Action</h1>
-                </div>
+            <!-- Logo and Heading -->
+            <div class="logo_flex">
+                <figure class="logo_image">
+                    <a href="index.html"><img src="images/Project Logo.jpg" alt="ACTA"></a>
+                </figure>
+                <h1 class="logo">A Call to Action</h1>
             </div>
         </header>
     </div>
@@ -32,6 +33,18 @@
             <li class="pnav"><a href="signup.html">Sign up</a></li>
         </ul>
     </nav>
+    <div class="slider">
+        <!-- Image Slider -->
+        <img id="slide1" src="images/slide1.png" alt="slide1"/>
+        <img id="slide2" src="images/slide2.png" alt="slide2"/>
+        <img id="slide3" src="images/slide3.png" alt="slide3"/>
+    </div>
+    <div class="slidernav">
+        <!-- Slider navigation buttons-->
+        <span class="selector active" onclick="transition(0)"></span>
+        <span class="selector" onclick="transition(1)"></span>
+        <span class="selector" onclick="transition(2)"></span>
+    </div>
 
     <main class="mindex">
         <section class="welcome">
@@ -56,10 +69,7 @@
                     </a>
                 </button>
             </div>
-            <figure class="welcome_image">
-                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="">
-            </figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yeiYJ57DrH4?si=r7aHtyZol-YTLTAd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </iframe>
         </section>
         <h2 class="goal_heading">UN Goals</h2>
         <section id="goals">
