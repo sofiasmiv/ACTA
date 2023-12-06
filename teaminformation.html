@@ -12,20 +12,12 @@
 <body>
     <div id="wrapper">
         <header>
-            <div class="flex_logo_nav">
-                <!-- Logo and Heading -->
-                <div class="logo_image">
-                    <img src="images/Project Logo.jpg" alt="ACTA">
-                    <h1 class="logo">A Call to Action</h1>
-                </div>
-                <nav>
-                    <!-- Nav inside header, this is for social media links -->
-                    <ul class="snav">
-                        <li><a href="index.html"><img src="images/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="climatechange.html"><img src="images/x.png" alt="X"></a></li>
-                        <li><a href="schedule.html"><img src="images/instagram.png" alt="Instagram"></a></li>
-                    </ul>
-                </nav>
+            <!-- Logo and Heading -->
+            <div class="logo_flex">
+                <figure class="logo_image">
+                    <a href="index.html"><img src="images/Project Logo.jpg" alt="ACTA"></a>
+                </figure>
+                <h1 class="logo">A Call to Action</h1>
             </div>
         </header>
     </div>
@@ -36,20 +28,55 @@
             <li class="pnav"><a href="climateaction.html">Climate Action</a></li>
             <li class="pnav"><a href="cleanwaterandsanitation.html">Clean Water and Sanitation</a></li>
             <li class="pnav"><a href="genderequality.html">Gender Equality</a></li>
-            <li class="active"><a href="teaminformation.html">Team Information</a></li>
+            <li class="pnav active"><a href="teaminformation.html">Team Information</a></li>
             <li class="pnav"><a href="signup.html">Sign up</a></li>
         </ul>
     </nav>
 
-    <main>
-
-
+    <main class="mteaminformation">
+        <div class="profiles">
+            <div class="box" id="abox">
+                <img class="profileimage" src="images/aysha.jpg" alt="ACTA">
+                <h2><a href="mailto:Aysha.Rehman@uea.ac.uk"> Aysha Rehman </a></h2>
+                <h3>Team Leader</h3>
+                <p>Provide leadership and guidance to steer the team towards successful goal attainment, fostering
+                    a collaborative and motivated work atmosphere. Additionally, driving innovation in both design and
+                    code to elevate
+                    project outcomes."</p>
+            </div>
+            <div class="box" id="rbox">
+                <img class="profileimage" src="images/Riley.jpeg" alt="ACTA">
+                <h2><a href="mailto:Riley.Oliver@uea.ac.uk">Riley Oliver</a></h2>
+                <h3>Main CSS Coder</h3>
+                <p> Crafting visually captivating and intuitive web interfaces while producing CSS code that's both
+                    clean and easily
+                    maintainable to stylize these interfaces.</p>
+            </div>
+            <div class="box" id="sbox">
+                <img class="profileimage" src="images/Sofia.jpg" alt="ACTA">
+                <h2><a href="mailto:S.Smith-Vazquez@uea.ac.uk">Sofia Smith-Vazquez</a></h2>
+                <h3>Main Desiger</h3>
+                <p>Lead the strategic development and execution of design initiatives, ensuring alignment with user
+                    requirements. Additionally, possess the proficiency to craft code, bridging the gap between design
+                    and
+                    implementation.</p>
+            </div>
+        </div>
+        
         <footer>
             <small>
                 <p>
                     Copyright &copy; 2023 A Call to Action <a href="mailto:teamsupport@gmail.com"> Team Support </a>
                 </p>
             </small>
+                <nav>
+                    <!-- Nav inside footer, this is for social media links -->
+                    <ul class="snav">
+                        <li><a href="index.html"><img src="images/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="climatechange.html"><img src="images/x.png" alt="X"></a></li>
+                        <li><a href="schedule.html"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    </ul>    
+                </nav>
         </footer>
 
     </main>

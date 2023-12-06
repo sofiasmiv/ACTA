@@ -1,3 +1,5 @@
+/* General */
+
 html {
     background-color: white;
 
@@ -11,16 +13,9 @@ body {
     line-height: 1.5;
 }
 
-header {
-    background-color: white;
-    height: 130px;
-}
-
-.logo {
-    flex: 1;
-    align-self: left;
+h1 {
+    font-size: 50px;
     padding-left: 5px;
-    margin-left: 100px;
 }
 
 p {
@@ -30,6 +25,55 @@ p {
     margin-right: auto;
 }
 
+figure {
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.welcome_left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+}
+
+.selector {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 0 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.welcome {
+    display: flex;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    height: 130px;
+}
+
+.logo_flex {
+    display: flex;
+}
+
+.logo_image > a > img {
+    height: 130px;
+    width: 130px;
+}
+
+/* Anchor Tags */
+
 a {
     text-decoration: none;
 }
@@ -38,6 +82,12 @@ a:link,
 a:visited {
     color: white;
 }
+   
+.box > h2 > a:hover {
+    color: #a0a0a0;
+}
+
+/* Main */
 
 .mindex {
     margin-top: 5px;
@@ -45,11 +95,15 @@ a:visited {
     margin-left: 5%;
     margin-right: 5%;
     padding: 16px;
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: #404040;
-    border-radius: 20px; */
     text-align: center;
+}
+
+.mteaminformation {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 16px;
 }
 
 .msignup {
@@ -63,12 +117,7 @@ a:visited {
     background-color: #b8b8b8;
 }
 
-section {
-    margin-top: 10px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 10px;
-}
+/* Footer */
 
 footer {
     background-color: #4d7022;
@@ -83,38 +132,12 @@ footer a:link {
     color: #fff9e8;
 }
 
-a:hover {
-    color: #e8fff9;
-}
-
-figure {
-    margin: 0;
-}
-
-.flex_logo_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-}
-
-.logo {
-    flex: 1;
-    align-self: left;
-}
-
-.logo_image {
-    display: flex;
-    height: 130px;
-    width: 130px;
-    align-self: left;
-    flex: 1;
-    margin-left: 35%;
-}
+/* Navigation Bar */
 
 .snav {
     display: flex;
     list-style-type: none;
+    justify-content: center;
 }
 
 .snav>li {
@@ -125,11 +148,6 @@ figure {
     height: 80px;
     width: 80px;
     overflow: hidden;
-}
-
-h1 {
-    font-size: 50px;
-    padding-left: 5px;
 }
 
 #primary_nav {
@@ -161,17 +179,9 @@ h1 {
     height: 100%;
     border-style: solid;
 }
-.active > a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.active {
-    background-color: #4d7022;
-}
 .pnav {
     background-color: #404040;
+    transition: all .2s ease-in-out;
 }
 .pnav > a{
     display: flex;
@@ -180,15 +190,53 @@ h1 {
     width: 100%;
 }
 
-.welcome_left {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.pnav:hover {
+    background-color: #505050;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
 
-.welcome {
-    display: flex;
+.active {
+    background-color: #4d7022;
+    transition: all .2s ease-in-out;
 }
+
+.active:hover {
+    background-color: #4d7022;
+    transform: scale(1.1);
+}
+
+/* Slider */
+
+.slider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transition: 1s;
+}
+
+.slider img:first-child {
+    z-index: 1;
+}
+
+.slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.slidernav {
+    text-align: center;
+    position: relative;
+}
+
+/* Goals on index */
 
 .goalsflex {
     display: flex;
@@ -196,27 +244,50 @@ h1 {
 }
 
 .goals {
-    display: inline-block;
-}
-
-footer {
-    text-align: center;
-}
-
-#goals {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-self: center;
     display: inline-block;
     align-self: center;
-    width: 80%;
+    width: 90%;
 }
 
-/* .pnav>a:hover {
-    color: #4d7022;
-} */
+.goal {
 
-.pnav:hover {
-    background-color: #505050;
-    border-radius: 5px;
+    height: 400px;
+    color: white;   
+    display:inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
 }
+
+.goal:hover {
+    transform: scale(1.2);
+}
+
+#goal1{
+    background-color: #4d7022;
+}
+
+#goal2{
+    background-color: #1f3781;
+}
+
+#goal3{
+    background-color: #a22a2a;
+}
+
+/* Sign up page */
 
 #sign_up {
     color: white;
@@ -236,6 +307,10 @@ footer {
 
 #form {
     display: flex;
+}
+
+#wrapper {
+    position: relative;
 }
 
 fieldset {
@@ -301,14 +376,23 @@ legend {
     background-color: white;
 }
 
-/* #topics {
-    display: block;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-} */
+#fname:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
+
+#lname:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
+
+#email:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
 
 .textinput:hover {
     border: 1px solid #5b5b5b;
@@ -386,4 +470,59 @@ legend {
     border: solid white;
     border-width: 0 3px 3px 0;
 
+}
+
+/* Team information Page */
+
+.profileimage{
+    width: 95%;
+    height: auto;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-self: center;
+}
+
+.box{
+    min-height: 700px;
+    height:auto;
+    color: white;   
+    display:inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.box > p{
+ text-align: left;
+ margin-left: 10px;
+}
+
+#abox{
+    background-color: #4d7022;
+}
+
+#rbox{
+    background-color: #1f3781;
+}
+
+#sbox{
+    background-color: #a22a2a;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px){
+
+    
 }
