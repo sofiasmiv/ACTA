@@ -81,6 +81,7 @@ footer a:link {
     color: #fff9e8;
 }
 
+/* Navigation Bar */
 a:hover {
     color: #e8fff9;
 }
@@ -124,6 +125,7 @@ h1 {
 }
 
 /* Every child must have 100% height and width to fit the navbar boxes */
+
 #primary_nav > ul {
     list-style-type: none;
     display: flex;
@@ -141,6 +143,7 @@ h1 {
 }
 .pnav {
     background-color: #404040;
+    transition: all .2s ease-in-out;
 }
 .pnav > a{
     display: flex;
@@ -155,6 +158,8 @@ h1 {
     text-align: left;
     width: 60%;
 }
+
+/* Slider */
 
 .slider {
     width: 100%;
@@ -195,10 +200,29 @@ h1 {
 
 .active {
     background-color: #4d7022;
+    transition: all .2s ease-in-out;
+}
+
+.active:hover {
+    background-color: #4d7022;
+    transform: scale(1.1);
 }
 
 .welcome {
     display: flex;
+}
+
+/* Goals on index */
+#goal1{
+    background-color: #4d7022;
+}
+
+#goal2{
+    background-color: #1f3781;
+}
+
+#goal3{
+    background-color: #a22a2a;
 }
 
 .goalsflex {
@@ -207,23 +231,43 @@ h1 {
 }
 
 .goals {
-    display: inline-block;
-}
-
-footer {
-    text-align: center;
-}
-
-#goals {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
     align-self: center;
-    width: 80%;
+    display: inline-block;
+    width: 90%;
+}
+
+.goal {
+
+    height: 400px;
+    color: white;   
+    display:inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+
+.goal:hover {
+    transform: scale(1.2);
 }
 
 .pnav:hover {
     background-color: #505050;
     border-radius: 5px;
+    transform: scale(1.1);
 }
+
+/* Sign up page */
 
 #sign_up {
     color: white;
@@ -312,14 +356,23 @@ legend {
     background-color: white;
 }
 
-/* #topics {
-    display: block;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-} */
+#fname:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
+
+#lname:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
+
+#email:hover {
+    background-color: white;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px; 
+}
 
 .textinput:hover {
     border: 1px solid #5b5b5b;
@@ -397,4 +450,59 @@ legend {
     border: solid white;
     border-width: 0 3px 3px 0;
 
+}
+
+/* Team information Page */
+
+.profileimage{
+    width: 95%;
+    height: auto;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-self: center;
+}
+
+.box{
+    min-height: 700px;
+    height:auto;
+    color: white;   
+    display:inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.box > p{
+ text-align: left;
+ margin-left: 10px;
+}
+
+#abox{
+    background-color: #4d7022;
+}
+
+#rbox{
+    background-color: #1f3781;
+}
+
+#sbox{
+    background-color: #a22a2a;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px){
+
+    
 }
