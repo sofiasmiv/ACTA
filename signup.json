@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "msignup":"<h3> Sign up <\/h3><p> Sign to to recieve newsletters with extra information <\/p><p class=\"form\"><small>Required information is marked with an asterik (*)<\/small><\/p>"
+    },
+    {
+        "id": 2,
+        "form":"<form action=\"\" method=\"post\" id=\"form\"><fieldset><legend>Contact Form</legend><label for=\"firstname\">First Name: * <\/label><input type=\"text\" class=\"textinput\" id=\"fname\" name=\"firstname\" required aria-required><label for=\"lastname\">Last Name: <\/label><input type=\"text\" class=\"textinput\" id=\"lname\" name=\"lastname\"><label for=\"email\">Email: *<\/label><input type=\"email\" class=\"textinput\" id=\"email\" name=\"email\" required aria-required><label for=\"topics\">Which of the following topics would you like to recieve newsletters about: *<\/label><label class=\"checkboxlabel\">General Information<input type=\"checkbox\" id=\"topics\" name=\"topics\"><span class=\"checkmark\"><\/span><\/label><label class=\"checkboxlabel\">Climate Change<input type=\"checkbox\" id=\"topics\" name=\"topics\"><span class=\"checkmark\"><\/span><\/label><label class=\"checkboxlabel\">Clean Water and Sanitation<input type=\"checkbox\" id=\"topics\" name=\"topics\"><span class=\"checkmark\"><\/span><\/label><label class=\"checkboxlabel\">Gender Equality<input type=\"checkbox\" id=\"topics\" name=\"topics\"><span class=\"checkmark\"><\/span><\/label><label class=\"checkboxlabel\">All of the above<input type=\"checkbox\" id=\"topics\" name=\"topics\"><span class=\"checkmark\"><\/span><\/label><button id=\"submit\">Submit<\/button><\/fieldset><\/form>"
+    }
+]
