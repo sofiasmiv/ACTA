@@ -5,7 +5,7 @@ const charityEl = document.querySelector(".charities");
 
 
 function loadContent(){
-    fetch('./cleanwaterandsanitation.json')
+    fetch('./genderequality.json')
         .then(res => res.json())
         .then(data => {
             console.log(data);
