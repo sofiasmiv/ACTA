@@ -485,9 +485,9 @@ legend {
     word-spacing: 4px;
 }
 
-#fname {
+.textinput{
     display: block;
-    width: 60%;
+    width: 55%;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
@@ -496,54 +496,12 @@ legend {
     border: 1px solid #999999;
     border-radius: 3px;
     background-color: white;
-}
-
-#lname {
-    display: block;
-    width: 60%;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 1px solid #999999;
-    border-radius: 3px;
-    background-color: white;
-}
-
-#email {
-    display: block;
-    width: 60%;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 1px solid #999999;
-    border-radius: 3px;
-    background-color: white;
-}
-
-#fname:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px; 
-}
-
-#lname:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px; 
-}
-
-#email:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px; 
 }
 
 .textinput:hover {
+    background-color: white;
     border: 1px solid #5b5b5b;
+    border-radius: 3px; 
 }
 
 #submit{
