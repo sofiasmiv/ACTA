@@ -220,9 +220,7 @@ footer a:hover {
 }
 
 .showNav {
-    width: 150px;
-    display: flex !important;
-    float: right;
+    all: unset;
 }
 
 /* Slider */
@@ -688,6 +686,11 @@ legend {
     header {
         width: 100%;
 
+    }
+    .showNav {
+        width: 150px;
+        display: flex !important;
+        float: right;
     }
 
     .logo_flex {
