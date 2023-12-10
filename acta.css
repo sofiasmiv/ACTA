@@ -258,10 +258,7 @@ footer a:hover {
 /* Goals on index */
 
 .goals {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
     align-self: center;
-    justify-content: center;
     width: 90%;
 }
 
@@ -270,7 +267,7 @@ footer a:hover {
     height: 500px;
     width: 300px;
     color: white;   
-    display:inline-block;
+    display:inline-flex;
     /* padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 11px;
@@ -386,8 +383,7 @@ footer a:hover {
     align-items: center;
     display: flex;
     flex-direction: row;
-    align-self: center;
-    width: 90%;
+    justify-content: center;
 }
 
 .charity {
