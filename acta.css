@@ -81,6 +81,10 @@ footer a:link {
     color: #fff9e8;
 }
 
+footer a:hover {
+    color: #a0a0a0;
+}
+
 /* Navigation Bar */
 a:hover {
     color: #e8fff9;
@@ -162,6 +166,25 @@ h1 {
     width: 60%;
 }
 
+<<<<<<< HEAD
+.active {
+    background-color: #4d7022;
+    transition: all .2s ease-in-out;
+}
+
+.active:hover {
+    background-color: #4d7022;
+    transform: scale(1.1);
+}
+
+.showNav {
+    width: 150px;
+    display: flex !important;
+    float: right;
+}
+
+=======
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 /* Slider */
 
 .slider {
@@ -220,6 +243,8 @@ h1 {
     background-color: #4d7022;
 }
 
+<<<<<<< HEAD
+=======
 #goal2 {
     background-color: #1f3781;
 }
@@ -233,29 +258,41 @@ h1 {
     justify-content: center;
 }
 
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 .goals {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     align-self: center;
+<<<<<<< HEAD
+    justify-content: center;
+=======
     display: inline-block;
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     width: 90%;
 }
 
 .goal {
 
+<<<<<<< HEAD
+    height: 500px;
+    width: 300px;
+    color: white;   
+    display:inline-block;
+    /* padding-top: 24px;
+=======
     height: 400px;
     color: white;
     display: inline-block;
     padding-top: 24px;
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     padding-bottom: 24px;
     padding-left: 11px;
-    padding-right: 11px;
+    padding-right: 11px; */
     margin-top: 20px;
     margin-right: 15px;
     margin-bottom: 20px;
     margin-left: 15px;
     text-align: center;
-    border-radius: 10px;
     box-sizing: border-box;
     transition: all .2s ease-in-out;
 }
@@ -263,13 +300,169 @@ h1 {
 .goal:hover {
     transform: scale(1.2);
 }
+.goal > figcaption{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
 
+<<<<<<< HEAD
+.goal > img{
+    margin: none;
+    padding: none;
+}
+
+#goal1{
+    background-color: #4d7022;
+=======
 .pnav:hover {
     background-color: #505050;
     border-radius: 5px;
     transform: scale(1.1);
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 }
 
+<<<<<<< HEAD
+#goal2{
+    background-color: #1f3781;
+}
+
+#goal3{
+    background-color: #a22a2a;
+}
+
+/* goals pages */
+
+#imgandbox1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#imgandbox2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagebox{
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 7px;
+    margin: 5px;
+    color: white;
+    height:auto;
+    width: 33%;
+    text-align: left;
+    align-items: left;
+}
+
+#pagebox1{
+    background-color: #4d7022;
+}
+
+#pagebox2{
+    background-color: #1f3781;
+}
+
+#pagebox3{
+    background-color: #a22a2a;
+}
+
+.goalsimage1 {
+    height: auto;
+    width: 67%;
+    margin: 5px;
+    object-fit: cover;
+}
+
+#imgandbox2 > img {
+    height: auto;
+    width: 43%;
+    margin: 5px;
+}
+
+#imgandbox2 > p {
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 7px;
+    margin: 5px;
+    color: #404040;
+    height:auto;
+    width: 58%;
+    text-align: left;
+    border: 2px solid #404040;
+}
+
+#charityheader {
+    text-align: center;
+    color: #404040;
+    padding-top: 20px;
+}
+
+.charities {
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 90%;
+}
+
+.charity {
+    height: 150px;
+    width: 400px;
+    color: white;   
+    display:inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+#charity1{
+    background-color: #365314;
+}
+
+#charity2{
+    background-color: #4d7022;
+}
+
+#charity3{
+    background-color: #70ad25;
+}
+
+#charity4{
+    background-color: #132763;
+}
+
+#charity5{
+    background-color: #1f3781;
+}
+
+#charity6{
+    background-color: #2b54cf;
+}
+
+#charity7{
+    background-color: #711818;
+}
+
+#charity8{
+    background-color: #a22a2a;
+}
+
+#charity9{
+    background-color: #e12929;
+}
+
+=======
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 /* Sign up page */
 
 #sign_up {
@@ -406,12 +599,20 @@ legend {
     position: relative;
 }
 
+<<<<<<< HEAD
+/* makes input bock for checkbox invisible but still functionable */
+.checkboxlabel input{
+=======
 .checkboxlabel input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     height: 0;
     width: 0;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
 }
 
 .checkmark {
@@ -457,9 +658,14 @@ legend {
 
 /* Team information Page */
 
+<<<<<<< HEAD
+.profileimage{
+    object-fit: contain;
+=======
 .profileimage {
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     width: 95%;
-    height: auto;
+    height: 300px;
 }
 
 .profiles {
@@ -588,9 +794,97 @@ legend {
     }
 
 }
+<<<<<<< HEAD
+
+#hamburger {
+    display: none;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    header {
+        width: 100%;
+
+    }
+
+    .logo_flex {
+        width: 100%;
+    }
+
+    h1 {
+        padding-left: 35px;
+        display: inline-block;
+        line-height: 50%;
+        /* display: none; */
+
+    }
+
+    #hamburger {
+        display: block;
+        float: right;
+        height: 60%;
+        background-color: #4d7022;
+        padding-top: 55px;
+        margin-left: auto;
+    }
+
+    header {
+        height: 130px;
+        display: flex;
+    }
+
+    #wrapper {
+        position: relative;
+    }
+
+    .logo_image {
+        height: 130px;
+        width: 100px;
+    }
+
+
+    #primary_nav {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .slidernav {
+        display: none;
+    }
+
+    .primary_nav {
+        z-index: 1;
+        right: 10px;
+        top: 20px;
+
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .goalsflex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profiles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+=======
 
 .showNav {
     width: 150px;
     display: flex !important;
     float: right;
 }
+>>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e

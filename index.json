@@ -41,14 +41,14 @@
     },
     {
         "id": 11,
-        "goals":"<article class=\"goal\" id=\"goal1\"><a href=\"climateaction.html\"><figure><img src=\"images/projectlogo.jpg\" alt=\"\"><figcaption><h2>Climate Action<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
+        "goals":"<article class=\"goal\" id=\"goal1\"><a href=\"climateaction.html\"><figure><img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXRremRyaGh6ODdvcndlZWkyNmhnaTM5dmduN2JuODk2enN5dGwyYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3TzCLY8gXzytS2x7ok/giphy.gif\" alt=\"\" height=\"300px\" width=\"300px\"><figcaption><h2>Climate Action<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
     },
     {
         "id": 12,
-        "goals":"<article class=\"goal\" id=\"goal2\"><a href=\"cleanwaterandsanitation.html\"><figure><img src=\"images/projectlogo.jpg\" alt=\"\"><figcaption><h2>Clean Water and Sanitation<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
+        "goals":"<article class=\"goal\" id=\"goal2\"><a href=\"cleanwaterandsanitation.html\"><figure><img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2I0bjNweHcxN3N5dTJ6YTQwb2dhYXNmN2JtbmJ3cmllOGNxcDZubCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/No5y9AQF4LR7kvjfZ4/giphy.gif\" alt=\"\" height=\"300px\" width=\"300px\"><figcaption><h2>Clean Water and Sanitation<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
     },
     {
         "id": 13,
-        "goals":"<article class=\"goal\" id=\"goal3\"><a href=\"genderequality.html\"><figure><img src=\"images/projectlogo.jpg\" alt=\"\"><figcaption><h2>Gender Equality<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
+        "goals":"<article class=\"goal\" id=\"goal3\"><a href=\"genderequality.html\"><figure><img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzcyMWpwYm01NWVtaDB2aW8xNmIzanFiZGV5ajFhcHNyM2g2NjVzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aGqINuHUDvmV3nPLHv/giphy.gif\" alt=\"\" height=\"300px\" width=\"300px\"><figcaption><h2>Gender Equality<\/h2><p>Estibulum et aliquet arcu. Cras congue cursus massa, actristique turpis rhoncus vel.<\/p><\/figcaption><\/figure><\/a><\/article>"
     }
 ]

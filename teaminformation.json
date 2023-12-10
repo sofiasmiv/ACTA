@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "profile":"<div class=\"box\" id=\"abox\"><img class=\"profileimage\" src=\"images/aysha.jpg\" alt=\"ACTA\"><h2><a href=\"mailto:Aysha.Rehman@uea.ac.uk\"> Aysha Rehman <\/a><\/h2><h3>Team Leader<\/h3><p>Provide leadership and guidance to steer the team towards successful goal attainment, fostering a collaborative and motivated work atmosphere. Additionally, driving innovation in both design and code to elevate project outcomes.\"<\/p><\/div>"
+    },
+    {
+        "id": 2,
+        "profile":"<div class=\"box\" id=\"rbox\"><img class=\"profileimage\" src=\"images/Riley.jpg\" alt=\"ACTA\"><h2><a href=\"mailto:Riley.Oliver@uea.ac.uk\">Riley Oliver<\/a><\/h2><h3>Main CSS Coder<\/h3><p> Crafting visually captivating and intuitive web interfaces while producing CSS code that's both clean and easily maintainable to stylize these interfaces.<\/p><\/div>"
+    },
+    {
+        "id": 3,
+        "profile":"<div class=\"box\" id=\"sbox\"><img class=\"profileimage\" src=\"images/Sofia.jpg\" alt=\"ACTA\"><h2><a href=\"mailto:S.Smith-Vazquez@uea.ac.uk\">Sofia Smith-Vazquez<\/a><\/h2><h3>Main Desiger<\/h3><p>Lead the strategic development and execution of design initiatives, ensuring alignment with user requirements. Additionally, possess the proficiency to craft code, bridging the gap between design and implementation.<\/p><\/div>"
+    }
+]
