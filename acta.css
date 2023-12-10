@@ -20,7 +20,7 @@ header {
     display: flex;
 }
 
-.logo_image > a > img {
+.logo_image>a>img {
     height: 130px;
     width: 130px;
 }
@@ -116,6 +116,7 @@ h1 {
     display: flex;
     height: 80px;
 }
+
 .primary_nav {
     margin: 0;
     padding: 0;
@@ -126,7 +127,7 @@ h1 {
 
 /* Every child must have 100% height and width to fit the navbar boxes */
 
-#primary_nav > ul {
+#primary_nav>ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -135,17 +136,19 @@ h1 {
     width: 100%;
 }
 
-.primary_nav > li {
+.primary_nav>li {
     display: flex;
     flex-grow: 1;
     height: 100%;
     border-style: solid;
 }
+
 .pnav {
     background-color: #404040;
     transition: all .2s ease-in-out;
 }
-.pnav > a{
+
+.pnav>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,15 +216,15 @@ h1 {
 }
 
 /* Goals on index */
-#goal1{
+#goal1 {
     background-color: #4d7022;
 }
 
-#goal2{
+#goal2 {
     background-color: #1f3781;
 }
 
-#goal3{
+#goal3 {
     background-color: #a22a2a;
 }
 
@@ -241,8 +244,8 @@ h1 {
 .goal {
 
     height: 400px;
-    color: white;   
-    display:inline-block;
+    color: white;
+    display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 11px;
@@ -359,26 +362,26 @@ legend {
 #fname:hover {
     background-color: white;
     border: 1px solid #5b5b5b;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 #lname:hover {
     background-color: white;
     border: 1px solid #5b5b5b;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 #email:hover {
     background-color: white;
     border: 1px solid #5b5b5b;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .textinput:hover {
     border: 1px solid #5b5b5b;
 }
 
-#submit{
+#submit {
     color: white;
     background-color: #a22a2a;
     max-width: 130px;
@@ -395,7 +398,7 @@ legend {
     background-color: #b54848;
 }
 
-.checkboxlabel{
+.checkboxlabel {
     display: block;
     padding-left: 35px;
     margin-bottom: 12px;
@@ -403,7 +406,7 @@ legend {
     position: relative;
 }
 
-.checkboxlabel input{
+.checkboxlabel input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -411,7 +414,7 @@ legend {
     width: 0;
 }
 
-.checkmark{
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -422,13 +425,13 @@ legend {
     border-radius: 3px;
 }
 
-.checkboxlabel:hover input ~ .checkmark {
+.checkboxlabel:hover input~.checkmark {
     background-color: white;
     border: 1px solid #5b5b5b;
     border-radius: 3px;
 }
 
-.checkboxlabel input:checked ~ .checkmark {
+.checkboxlabel input:checked~.checkmark {
     background-color: #6da727;
 }
 
@@ -438,11 +441,11 @@ legend {
     display: none;
 }
 
-.checkboxlabel input:checked ~ .checkmark:after {
-    display:block;
+.checkboxlabel input:checked~.checkmark:after {
+    display: block;
 }
 
-.container .checkmark:after{
+.container .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -454,7 +457,7 @@ legend {
 
 /* Team information Page */
 
-.profileimage{
+.profileimage {
     width: 95%;
     height: auto;
 }
@@ -465,11 +468,11 @@ legend {
     align-self: center;
 }
 
-.box{
+.box {
     min-height: 700px;
-    height:auto;
-    color: white;   
-    display:inline-block;
+    height: auto;
+    color: white;
+    display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 11px;
@@ -483,26 +486,112 @@ legend {
     box-sizing: border-box;
 }
 
-.box > p{
- text-align: left;
- margin-left: 10px;
+.box>p {
+    text-align: left;
+    margin-left: 10px;
 }
 
-#abox{
+#abox {
     background-color: #4d7022;
 }
 
-#rbox{
+#rbox {
     background-color: #1f3781;
 }
 
-#sbox{
+#sbox {
     background-color: #a22a2a;
 }
 
 /* Media Query */
+#hamburger {
+    display: none;
+}
 
-@media only screen and (max-width: 768px){
 
-    
+
+@media only screen and (max-width:768px) {
+    header {
+        width: 100%;
+
+    }
+
+    .logo_flex {
+        width: 100%;
+    }
+
+    h1 {
+        padding-left: 35px;
+        display: inline-block;
+        line-height: 50%;
+        /* display: none; */
+
+    }
+
+    #hamburger {
+        display: block;
+        float: right;
+        height: 60%;
+        background-color: #4d7022;
+        padding-top: 55px;
+        margin-left: auto;
+    }
+
+    header {
+        height: 130px;
+        display: flex;
+    }
+
+    #wrapper {
+        position: relative;
+    }
+
+    .logo_image {
+        height: 130px;
+        width: 100px;
+    }
+
+
+    #primary_nav {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .slidernav {
+        display: none;
+    }
+
+    .primary_nav {
+        z-index: 1;
+        right: 10px;
+        top: 20px;
+
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .goalsflex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profiles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+.showNav {
+    width: 150px;
+    display: flex !important;
+    float: right;
 }
