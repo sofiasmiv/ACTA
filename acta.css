@@ -1,3 +1,5 @@
+/* General */
+
 html {
     background-color: white;
 
@@ -11,18 +13,9 @@ body {
     line-height: 1.5;
 }
 
-header {
-    background-color: white;
-    height: 130px;
-}
-
-.logo_flex {
-    display: flex;
-}
-
-.logo_image>a>img {
-    height: 130px;
-    width: 130px;
+h1 {
+    font-size: 50px;
+    padding-left: 5px;
 }
 
 p {
@@ -32,6 +25,55 @@ p {
     margin-right: auto;
 }
 
+figure {
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.welcome_left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+}
+
+.selector {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px 0 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.welcome {
+    display: flex;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    height: 130px;
+}
+
+.logo_flex {
+    display: flex;
+}
+
+.logo_image > a > img {
+    height: 130px;
+    width: 130px;
+}
+
+/* Anchor Tags */
+
 a {
     text-decoration: none;
 }
@@ -40,6 +82,12 @@ a:link,
 a:visited {
     color: white;
 }
+   
+.box > h2 > a:hover {
+    color: #a0a0a0;
+}
+
+/* Main */
 
 .mindex {
     margin-top: 5px;
@@ -48,6 +96,23 @@ a:visited {
     margin-right: 5%;
     padding: 16px;
     text-align: center;
+}
+
+.mgoals {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 16px;
+    display: inline-block;
+}
+
+.mteaminformation {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 16px;
 }
 
 .msignup {
@@ -61,12 +126,7 @@ a:visited {
     background-color: #b8b8b8;
 }
 
-section {
-    margin-top: 10px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 10px;
-}
+/* Footer */
 
 footer {
     background-color: #4d7022;
@@ -86,13 +146,6 @@ footer a:hover {
 }
 
 /* Navigation Bar */
-a:hover {
-    color: #e8fff9;
-}
-
-figure {
-    margin: 0;
-}
 
 .snav {
     display: flex;
@@ -110,17 +163,11 @@ figure {
     overflow: hidden;
 }
 
-h1 {
-    font-size: 50px;
-    padding-left: 5px;
-}
-
 #primary_nav {
     justify-content: space-around;
     display: flex;
     height: 80px;
 }
-
 .primary_nav {
     margin: 0;
     padding: 0;
@@ -130,8 +177,7 @@ h1 {
 }
 
 /* Every child must have 100% height and width to fit the navbar boxes */
-
-#primary_nav>ul {
+#primary_nav > ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -140,33 +186,29 @@ h1 {
     width: 100%;
 }
 
-.primary_nav>li {
+.primary_nav > li {
     display: flex;
     flex-grow: 1;
     height: 100%;
     border-style: solid;
 }
-
 .pnav {
     background-color: #404040;
     transition: all .2s ease-in-out;
 }
-
-.pnav>a {
+.pnav > a{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.welcome_left {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 60%;
+.pnav:hover {
+    background-color: #505050;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
 
-<<<<<<< HEAD
 .active {
     background-color: #4d7022;
     transition: all .2s ease-in-out;
@@ -183,8 +225,6 @@ h1 {
     float: right;
 }
 
-=======
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 /* Slider */
 
 .slider {
@@ -215,76 +255,23 @@ h1 {
     position: relative;
 }
 
-.selector {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px 0 0;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.active {
-    background-color: #4d7022;
-    transition: all .2s ease-in-out;
-}
-
-.active:hover {
-    background-color: #4d7022;
-    transform: scale(1.1);
-}
-
-.welcome {
-    display: flex;
-}
-
 /* Goals on index */
-#goal1 {
-    background-color: #4d7022;
-}
 
-<<<<<<< HEAD
-=======
-#goal2 {
-    background-color: #1f3781;
-}
-
-#goal3 {
-    background-color: #a22a2a;
-}
-
-.goalsflex {
-    display: flex;
-    justify-content: center;
-}
-
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 .goals {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     align-self: center;
-<<<<<<< HEAD
     justify-content: center;
-=======
-    display: inline-block;
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     width: 90%;
 }
 
 .goal {
 
-<<<<<<< HEAD
     height: 500px;
     width: 300px;
     color: white;   
     display:inline-block;
     /* padding-top: 24px;
-=======
-    height: 400px;
-    color: white;
-    display: inline-block;
-    padding-top: 24px;
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     padding-bottom: 24px;
     padding-left: 11px;
     padding-right: 11px; */
@@ -307,7 +294,6 @@ h1 {
     margin-right: 11px;
 }
 
-<<<<<<< HEAD
 .goal > img{
     margin: none;
     padding: none;
@@ -315,15 +301,8 @@ h1 {
 
 #goal1{
     background-color: #4d7022;
-=======
-.pnav:hover {
-    background-color: #505050;
-    border-radius: 5px;
-    transform: scale(1.1);
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 }
 
-<<<<<<< HEAD
 #goal2{
     background-color: #1f3781;
 }
@@ -461,8 +440,6 @@ h1 {
     background-color: #e12929;
 }
 
-=======
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
 /* Sign up page */
 
 #sign_up {
@@ -513,9 +490,9 @@ legend {
     word-spacing: 4px;
 }
 
-#fname {
+.textinput{
     display: block;
-    width: 60%;
+    width: 55%;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
@@ -524,57 +501,15 @@ legend {
     border: 1px solid #999999;
     border-radius: 3px;
     background-color: white;
-}
-
-#lname {
-    display: block;
-    width: 60%;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 1px solid #999999;
-    border-radius: 3px;
-    background-color: white;
-}
-
-#email {
-    display: block;
-    width: 60%;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 1px solid #999999;
-    border-radius: 3px;
-    background-color: white;
-}
-
-#fname:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px;
-}
-
-#lname:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px;
-}
-
-#email:hover {
-    background-color: white;
-    border: 1px solid #5b5b5b;
-    border-radius: 3px;
 }
 
 .textinput:hover {
+    background-color: white;
     border: 1px solid #5b5b5b;
+    border-radius: 3px; 
 }
 
-#submit {
+#submit{
     color: white;
     background-color: #a22a2a;
     max-width: 130px;
@@ -591,7 +526,7 @@ legend {
     background-color: #b54848;
 }
 
-.checkboxlabel {
+.checkboxlabel{
     display: block;
     padding-left: 35px;
     margin-bottom: 12px;
@@ -599,15 +534,8 @@ legend {
     position: relative;
 }
 
-<<<<<<< HEAD
 /* makes input bock for checkbox invisible but still functionable */
 .checkboxlabel input{
-=======
-.checkboxlabel input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     height: 0;
     width: 0;
     opacity: 0;
@@ -615,7 +543,7 @@ legend {
     cursor: pointer;
 }
 
-.checkmark {
+.checkmark{
     position: absolute;
     top: 0;
     left: 0;
@@ -626,13 +554,13 @@ legend {
     border-radius: 3px;
 }
 
-.checkboxlabel:hover input~.checkmark {
+.checkboxlabel:hover input ~ .checkmark {
     background-color: white;
     border: 1px solid #5b5b5b;
     border-radius: 3px;
 }
 
-.checkboxlabel input:checked~.checkmark {
+.checkboxlabel input:checked ~ .checkmark {
     background-color: #6da727;
 }
 
@@ -642,11 +570,11 @@ legend {
     display: none;
 }
 
-.checkboxlabel input:checked~.checkmark:after {
-    display: block;
+.checkboxlabel input:checked ~ .checkmark:after {
+    display:block;
 }
 
-.container .checkmark:after {
+.container .checkmark:after{
     left: 9px;
     top: 5px;
     width: 5px;
@@ -658,12 +586,8 @@ legend {
 
 /* Team information Page */
 
-<<<<<<< HEAD
 .profileimage{
     object-fit: contain;
-=======
-.profileimage {
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
     width: 95%;
     height: 300px;
 }
@@ -674,11 +598,11 @@ legend {
     align-self: center;
 }
 
-.box {
+.box{
     min-height: 700px;
-    height: auto;
-    color: white;
-    display: inline-block;
+    height:auto;
+    color: white;   
+    display:inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 11px;
@@ -692,24 +616,30 @@ legend {
     box-sizing: border-box;
 }
 
-.box>p {
-    text-align: left;
-    margin-left: 10px;
+.box > p{
+ text-align: left;
+ margin-left: 10px;
 }
 
-#abox {
+#abox{
     background-color: #4d7022;
 }
 
-#rbox {
+#rbox{
     background-color: #1f3781;
 }
 
-#sbox {
+#sbox{
     background-color: #a22a2a;
 }
 
 /* Media Query */
+
+@media only screen and (max-width: 768px){
+
+    
+}
+
 #hamburger {
     display: none;
 }
@@ -794,97 +724,3 @@ legend {
     }
 
 }
-<<<<<<< HEAD
-
-#hamburger {
-    display: none;
-}
-
-
-
-@media only screen and (max-width:768px) {
-    header {
-        width: 100%;
-
-    }
-
-    .logo_flex {
-        width: 100%;
-    }
-
-    h1 {
-        padding-left: 35px;
-        display: inline-block;
-        line-height: 50%;
-        /* display: none; */
-
-    }
-
-    #hamburger {
-        display: block;
-        float: right;
-        height: 60%;
-        background-color: #4d7022;
-        padding-top: 55px;
-        margin-left: auto;
-    }
-
-    header {
-        height: 130px;
-        display: flex;
-    }
-
-    #wrapper {
-        position: relative;
-    }
-
-    .logo_image {
-        height: 130px;
-        width: 100px;
-    }
-
-
-    #primary_nav {
-        display: none;
-    }
-
-    .slider {
-        display: none;
-    }
-
-    .slidernav {
-        display: none;
-    }
-
-    .primary_nav {
-        z-index: 1;
-        right: 10px;
-        top: 20px;
-
-    }
-
-    section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-    .goalsflex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .profiles {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-}
-=======
-
-.showNav {
-    width: 150px;
-    display: flex !important;
-    float: right;
-}
->>>>>>> ce548a39ace52efc8a3f05e111ddc8644659417e
